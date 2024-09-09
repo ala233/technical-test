@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: justify;
+  border: 4px  solid transparent;
+  transition: border-color 0.3s;
+
+  .cardContent {
+    padding: 0 20px;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  &.active {
+    border: 4px solid;
+    border-color: #0466cf;
+  }
+}
